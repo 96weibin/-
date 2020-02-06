@@ -1,0 +1,186 @@
+{
+    "question_ID": "267729019",
+    "url": "https://www.zhihu.com/question/267729019",
+    "title": "如何看待人工智能已经能自动编写html和css了？",
+    "score": "4428.33768",
+    "bestAnswer": {
+        "answer_ID": "332167548",
+        "url": "https://www.zhihu.com/question/267729019/answer/332167548",
+        "up_count": 8,
+        "author": {
+            "avatarUrlTemplate": "https://pic2.zhimg.com/v2-54496172fb42e1af814a91b1fdc69cc5_{size}.jpg",
+            "type": "people",
+            "name": "广州蓝景信息技术有限公司",
+            "url": "http://www.zhihu.com/api/v4/people/5d7179f2117787c4a257b05a76ed0bd0",
+            "gender": -1,
+            "userType": "organization",
+            "urlToken": "yan-zhou-lan-jing-xin-xi-ji-zhu-you-xian-gong-si",
+            "isAdvertiser": false,
+            "avatarUrl": "https://pic2.zhimg.com/v2-54496172fb42e1af814a91b1fdc69cc5_is.jpg",
+            "isOrg": true,
+            "headline": "",
+            "followerCount": 86,
+            "badge": [
+                {
+                    "type": "identity",
+                    "description": "已认证的官方帐号"
+                }
+            ],
+            "id": "5d7179f2117787c4a257b05a76ed0bd0"
+        },
+        "certified": "已认证的官方帐号",
+        "bio": "",
+        "summary": "会是趋势，所以作为程序员，也是需要更新自己的知识点、和新技术，我们不是要与人工智能对着干，而是要与人工智能更好地合作、协作，才会提高工作效率。",
+        "content": "会是趋势，所以作为程序员，也是需要更新自己的知识点、和新技术，我们不是要与人工智能对着干，而是要与人工智能更好地合作、协作，才会提高工作效率。",
+        "createdTime": 1519963415,
+        "updatedTime": 1519963415,
+        "author_title": "广州蓝景信息技术有限公司"
+    },
+    "question_content": "在未来三年内，深度学习将改变前端开发，它可以快速创建原型，并降低软件开发的门槛。 去年，该领域取得了突破性的进展，其中 Tony Beltramelli 发表了 pix2code 的论文[1]，而 Airbnb 则推出了sketch2code[2]。 目前，前端开发自动化的最大障碍是计算能力。但是，现在我们可以使用深度学习的算法，以及合成的训练数据，探索人工前端开发的自动化。",
+    "topices": [
+        {
+            "title": "互联网",
+            "url": "//www.zhihu.com/topic/19550517"
+        },
+        {
+            "title": "人工智能",
+            "url": "//www.zhihu.com/topic/19551275"
+        },
+        {
+            "title": "HTML",
+            "url": "//www.zhihu.com/topic/19551323"
+        },
+        {
+            "title": "CSS",
+            "url": "//www.zhihu.com/topic/19551326"
+        },
+        {
+            "title": "HTML5",
+            "url": "//www.zhihu.com/topic/19557564"
+        }
+    ],
+    "attention_count": "25",
+    "view_count": "1156",
+    "answers": [
+        {
+            "answer_ID": "332167548",
+            "url": "http://www.zhihu.com/api/v4/answers/332167548",
+            "content": "会是趋势，所以作为程序员，也是需要更新自己的知识点、和新技术，我们不是要与人工智能对着干，而是要与人工智能更好地合作、协作，才会提高工作效率。",
+            "createdTime": 1519963415,
+            "author": {
+                "avatarUrlTemplate": "https://pic2.zhimg.com/v2-54496172fb42e1af814a91b1fdc69cc5_{size}.jpg",
+                "type": "people",
+                "name": "广州蓝景信息技术有限公司",
+                "url": "http://www.zhihu.com/api/v4/people/5d7179f2117787c4a257b05a76ed0bd0",
+                "gender": -1,
+                "userType": "organization",
+                "urlToken": "yan-zhou-lan-jing-xin-xi-ji-zhu-you-xian-gong-si",
+                "isAdvertiser": false,
+                "avatarUrl": "https://pic2.zhimg.com/v2-54496172fb42e1af814a91b1fdc69cc5_is.jpg",
+                "isOrg": true,
+                "headline": "",
+                "followerCount": 86,
+                "badge": [
+                    {
+                        "type": "identity",
+                        "description": "已认证的官方帐号"
+                    }
+                ],
+                "id": "5d7179f2117787c4a257b05a76ed0bd0"
+            },
+            "updatedTime": 1519963415
+        },
+        {
+            "answer_ID": "332640238",
+            "url": "http://www.zhihu.com/api/v4/answers/332640238",
+            "content": "我觉得dba会失业的，具体可以看cmu self driving 那篇paper， 前端本身大部分都是伪程序员，他们不失业天理难容。",
+            "createdTime": 1520002685,
+            "author": {
+                "avatarUrlTemplate": "https://pic4.zhimg.com/da8e974dc_{size}.jpg",
+                "type": "people",
+                "name": "知乎用户",
+                "url": "http://www.zhihu.com/api/v4/people/0",
+                "gender": 1,
+                "userType": "people",
+                "urlToken": "",
+                "isAdvertiser": false,
+                "avatarUrl": "https://pic4.zhimg.com/da8e974dc_is.jpg",
+                "isOrg": false,
+                "headline": "码农",
+                "followerCount": 31,
+                "badge": [],
+                "id": "6851a7ae85d36376640b05b63cb5b8da"
+            },
+            "updatedTime": 1520002685
+        },
+        {
+            "answer_ID": "332733485",
+            "url": "http://www.zhihu.com/api/v4/answers/332733485",
+            "content": "能做和能工业化的做，这还有一个漫长的过程。这个过程漫长到可能不是你我有生之年能见到也不稀奇。你知道50年前就“能做”单人飞行的喷气背包吗。。但直到今年还没能量产。。。我猜当时要是有知乎，应该也会有这么个帖子：如何看待人们已经能用喷气背包飞行…",
+            "createdTime": 1520011591,
+            "author": {
+                "avatarUrlTemplate": "https://pic4.zhimg.com/da8e974dc_{size}.jpg",
+                "type": "people",
+                "name": "烈日烤鱼",
+                "url": "http://www.zhihu.com/api/v4/people/4a8321814fd9c59c3b76d506037bf35e",
+                "gender": 1,
+                "userType": "people",
+                "urlToken": "lierikaoyu",
+                "isAdvertiser": false,
+                "avatarUrl": "https://pic4.zhimg.com/da8e974dc_is.jpg",
+                "isOrg": false,
+                "headline": "Software Engineer @ Google",
+                "followerCount": 1220,
+                "badge": [],
+                "id": "4a8321814fd9c59c3b76d506037bf35e"
+            },
+            "updatedTime": 1520018776
+        },
+        {
+            "answer_ID": "333378193",
+            "url": "http://www.zhihu.com/api/v4/answers/333378193",
+            "content": "藐视一切的看待",
+            "createdTime": 1520093790,
+            "author": {
+                "avatarUrlTemplate": "https://pic1.zhimg.com/v2-bef8eee904ebae47dc9efebe152f9290_{size}.jpg",
+                "type": "people",
+                "name": "一个没羞没臊的",
+                "url": "http://www.zhihu.com/api/v4/people/16e54d29b608699695eb600b313bc264",
+                "gender": -1,
+                "userType": "people",
+                "urlToken": "zhu-ge-xiao-tian-52",
+                "isAdvertiser": false,
+                "avatarUrl": "https://pic1.zhimg.com/v2-bef8eee904ebae47dc9efebe152f9290_is.jpg",
+                "isOrg": false,
+                "headline": "程序员",
+                "followerCount": 6,
+                "badge": [],
+                "id": "16e54d29b608699695eb600b313bc264"
+            },
+            "updatedTime": 1520093790
+        },
+        {
+            "answer_ID": "337122506",
+            "url": "http://www.zhihu.com/api/v4/answers/337122506",
+            "content": "能写和能写好还是很大区别的作为一个程序员,提升自己硬功夫才是关键......",
+            "createdTime": 1520515010,
+            "author": {
+                "avatarUrlTemplate": "https://pic1.zhimg.com/v2-7d58ba8e563c73bb223b133834f40c48_{size}.jpg",
+                "type": "people",
+                "name": "云时之间",
+                "url": "http://www.zhihu.com/api/v4/people/1775cf7250476437afefc315d4c3a5d9",
+                "gender": 1,
+                "userType": "people",
+                "urlToken": "you-cai-55-49",
+                "isAdvertiser": false,
+                "avatarUrl": "https://pic1.zhimg.com/v2-7d58ba8e563c73bb223b133834f40c48_is.jpg",
+                "isOrg": false,
+                "headline": "机器学习的小萌新 自然语言处理的小呆瓜",
+                "followerCount": 784,
+                "badge": [],
+                "id": "1775cf7250476437afefc315d4c3a5d9"
+            },
+            "updatedTime": 1520515010
+        }
+    ]
+}
