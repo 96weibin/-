@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "startPm2":"pm2 start server.js",
-    "stopPm2":"pm2 kill",
-    "killPm2":"pm2 stop server.js"
+    "startPm2": "pm2 start server.js",
+    "stopPm2": "pm2 kill",
+    "killPm2": "pm2 stop server.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,12 @@
   "homepage": "https://github.com/96weibin/ZhiHu#readme",
   "devDependencies": {
     "koa": "^2.11.0",
+    "koa-better-body": "^3.3.4",
+    "koa-convert": "^1.2.0",
+    "koa-ejs": "^4.3.0",
+    "koa-router": "^8.0.7",
+    "koa-session": "^5.13.1",
+    "koa-static-cache": "^5.1.2",
     "mysql-pro": "^1.0.1"
   }
 }
