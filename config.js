@@ -13,7 +13,7 @@ module.exports={
 
     //database
     db_host : '111.229.241.56',
-    db_port : 2020,
+    db_port : 80,
     db_database : 'ZhiHu',
     db_user : 'root',
     db_password : 'root123',
