@@ -44,13 +44,26 @@ router.get('detail/:id', async ctx => {
     `);
     let answers = await ctx.db.execute(`
         SELECT
-            *
+            an.ID as ID,
+            an.content as content,
+            au.name as name,
+            au.img_url as img_url,
+            au.headline as headline,
+            au.followerCount as followerCount
         FROM
             answer_table AS an
         LEFT JOIN author_table AS au ON an.author_ID = au.ID
         WHERE
             question_ID = ${id}
     `)
+    answers = answers.filter(answer=>{
+        if(answer.ID == question.best_answer_ID){
+            question.bestAnswer = answer;
+            return false
+        } else {
+            return true
+        }
+    })
     await ctx.render('item',{
         question,
         topics,

@@ -7,5 +7,10 @@
             $span.html($span.attr('title')).parent().removeClass('RichContent-inner')
             $(this).remove()
         })
+        let a = $('.QuestionRichText-more').click(function(){
+            let $span = $(this).prev();
+            $span.html($span.attr('title')).parent().parent().removeClass('QuestionRichText--collapsed')
+            $(this).remove()
+        })
     })
 </script>

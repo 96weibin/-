@@ -1,4 +1,9 @@
-# 知乎
+# 知乎demo
+
+## 技术栈
+
+1. node爬虫抓取知乎数据，插入mysql
+2. koa2获取mysql数据,render ejs模板
 
 ## 数据获取
 
@@ -15,3 +20,7 @@
     1. port、dir、数据库等信息包成模块 config.js 统一管理
     2. libs目录存放 连接sql程序，可以封装执行事务的方法绑定在client对象上
     3. use空的时候  把 client 绑定到ctx 上，从而各个路由模块都可以使用同一个连接
+
+### link
+
+    http://http://111.229.241.56:8080/

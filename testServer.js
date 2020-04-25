@@ -26,18 +26,17 @@ let authors = {}, author_ID = 1;
 let questions = {}, question_ID = 1;
 let answers = {}, answer_ID = 1;
 
-
-
-
 router.get('/',async ctx=>{
     let f1 = fs.readFileSync('./.topics');
     let json = JSON.parse(f1.toString());
+    // console.log(json[0].bestAnswer)
 
     json.forEach(question => {
 
         //topic 
         question.topics = question.topices.map(top => {
             let title = top.title;
+            // let url = top.url;
             title = title.replace(/^[\r\f\t\n]+|[\n\r\f\t]+$/g,'');
             if(topics[title]){
                 return topics[title]
@@ -46,7 +45,6 @@ router.get('/',async ctx=>{
                 return topics[title]
             }
         })
-        // console.log(question.topics);
 
 
         //author
@@ -57,6 +55,11 @@ router.get('/',async ctx=>{
                 authors[old_ID] = author;
                 author.id = author_ID ++;
             }
+                /**
+                 * 遍历所有 author
+                 * 对没有的author 加入 authors 并修改此author的新id
+                 * 需要将 answer 内存的authorid  也进行更改
+                 */
             if(index == 0){
                 delete question.bestAnswer.author;
                 question.bestAnswer.author_ID = old_ID;
@@ -64,27 +67,23 @@ router.get('/',async ctx=>{
                 delete question.answers[index-1].author;
                 question.answers[index-1].author_ID = old_ID;
             }
-            return authors[old_ID]
-
+            // return authors[old_ID]
+            //这里返回值也没有用啊
         })
-
 
         //question
         let ID =  question_ID;
         questions[question_ID++] = question;
 
-        //answer
-
+        //answers
         [question.bestAnswer,...question.answers].forEach(answer=>{
             answer.id = answer_ID;
             answer.question_ID = ID
             answers[answer_ID ++] = answer;
         })
     });
+
     // console.log(authors['2a55fb1b7f5995d9fdad7e818e61599a'])
-
-
-
     
     (async ()=>{
         try {
@@ -120,7 +119,7 @@ router.get('/',async ctx=>{
             let allAnswers = [];
             for(let id in answers){
                 let answer = answers[id];
-                allAnswers.push(dataJoin(id, answer.question_ID, answer.author_ID,answer.content, answer.createdTime ))
+                allAnswers.push(dataJoin(id, answer.question_ID, authors[answer.author_ID].id,answer.content, answer.createdTime ))
             }
 
             let answerSql = `INSERT INTO answer_table VALUES ${allAnswers.join(',')}`;
@@ -128,13 +127,12 @@ router.get('/',async ctx=>{
             // console.log(authorSql)
 
             client.startTransaction();
-            // let iTopic = await client.executeTransaction(topicSql);
-            // let iAuthor = await client.executeTransaction(authorSql);
-            // let iQuestion = await client.executeTransaction(questionSql);
+            let iTopic = await client.executeTransaction(topicSql);
+            let iAuthor = await client.executeTransaction(authorSql);
+            let iQuestion = await client.executeTransaction(questionSql);
             let iAnswer = await client.executeTransaction(answerSql);
             client.stopTransaction();
             console.log('完成')
-
             function dataJoin(...args){
                 return "('" + args.map(item=>{
                     item = item || '';
@@ -146,8 +144,6 @@ router.get('/',async ctx=>{
             console.log(error)
         }
     })()
-
-    
 })
 
 
