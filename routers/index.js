@@ -1,4 +1,5 @@
 const router = require('koa-router')();
+const conf = require('../config')
 
 //渲染首页
 router.get('',async ctx => {
@@ -20,7 +21,7 @@ router.get('',async ctx => {
     LEFT JOIN author_table AS au ON an.author_ID = au.ID
     LIMIT ${limit} OFFSET ${(nowPage - 1) * limit}
 `);
-    await ctx.render('list',{questions})
+    await ctx.render('list',{questions,conf})
 })
 
 //渲染详情页
@@ -67,7 +68,8 @@ router.get('detail/:id', async ctx => {
     await ctx.render('item',{
         question,
         topics,
-        answers
+        answers,
+        conf
     })
 })
 module.exports = router.routes()

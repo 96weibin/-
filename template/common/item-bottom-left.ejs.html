@@ -6,7 +6,7 @@
           <div class="AnswerAdd-header">
             <div class="AuthorInfo AnswerAdd-info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
               <span class="UserLink AuthorInfo-avatarWrapper">
-                <img class="Avatar AuthorInfo-avatar" width="38" height="38" src="/img/avatar_is.jpg" srcset="/img/avatar_im.jpg 2x" alt="名字">
+                <img class="Avatar AuthorInfo-avatar" width="38" height="38" src="<%= conf.wwwPath %>/img/avatar_is.jpg" srcset="<%= conf.wwwPath %>/img/avatar_im.jpg 2x" alt="名字">
               </span>
               <div class="AuthorInfo-content">
                 <div class="AuthorInfo-head">
@@ -49,7 +49,7 @@
                 <div class="Popover">
                   <div>
                     <a class="UserLink-link" href="#">
-                      <img class="Avatar AuthorInfo-avatar" width="38" height="38" src="<%= question.bestAnswer.img_url %>" srcset="/img/v_l.jpg 2x" alt="名字"></a>
+                      <img class="Avatar AuthorInfo-avatar" width="38" height="38" src="<%= question.bestAnswer.img_url %>" srcset="<%= conf.wwwPath %>/img/v_l.jpg 2x" alt="名字"></a>
                   </div>
                 </div>
               </span>
@@ -162,7 +162,7 @@
                   <div class="Popover">
                     <div>
                       <a class="UserLink-link" href="#">
-                        <img class="Avatar AuthorInfo-avatar" width="38" height="38" src="<%= answer.img_url %>" srcset="/img/l2.jpg 2x" alt="名字"></a>
+                        <img class="Avatar AuthorInfo-avatar" width="38" height="38" src="<%= answer.img_url %>" srcset="<%= conf.wwwPath %>/img/l2.jpg 2x" alt="名字"></a>
                     </div>
                   </div>
                 </span>
