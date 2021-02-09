@@ -13,10 +13,10 @@ module.exports={
     secrit_key : ['sjldfjalksdj','uwoieuroiqwe','sapdfiasdopmna','aposfaousd'],
 
     //database
-    db_host : '111.229.241.56',
+    db_host : '106.13.116.236',
     db_port : 2020,
     db_database : 'ZhiHu',
     db_user : 'root',
-    db_password : 'root123',
+    db_password : 'root1234',
 
 }
